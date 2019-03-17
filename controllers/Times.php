@@ -2,7 +2,7 @@
 
 use BackendMenu;
 use Backend\Classes\Controller;
-
+use Jc91715\Bill\Models\Time;
 /**
  * Times Back-end Controller
  */
@@ -22,5 +22,17 @@ class Times extends Controller
         parent::__construct();
 
         BackendMenu::setContext('Jc91715.Bill', 'bill', 'times');
+    }
+
+    public function index()
+    {
+
+        $this->asExtension('ListController')->index();
+    }
+
+    public function echarts(){
+        $this->addJs('https://echarts.baidu.com/dist/echarts.min.js');
+        $this->var['lists'] = Time::get();
+
     }
 }
