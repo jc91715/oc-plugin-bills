@@ -8,5 +8,7 @@ columns:
         searchable: true
     today_bill_date:
         label: 日期
+        type: datetime
+        format:   Y-m-d H:i:s l 
     today_amount:
         label: 花费金额
