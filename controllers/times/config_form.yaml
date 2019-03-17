@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Time
+
+# Model Form Field configuration
+form: $/jc91715/bill/models/time/fields.yaml
+
+# Model Class name
+modelClass: Jc91715\Bill\Models\Time
+
+# Default redirect location
+defaultRedirect: jc91715/bill/times
+
+# Create page
+create:
+    title: Create Time
+    redirect: jc91715/bill/times/update/:id
+    redirectClose: jc91715/bill/times
+
+# Update page
+update:
+    title: Edit Time
+    redirect: jc91715/bill/times
+    redirectClose: jc91715/bill/times
+
+# Preview page
+preview:
+    title: Preview Time

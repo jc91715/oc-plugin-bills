@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Bill
+
+# Model Form Field configuration
+form: $/jc91715/bill/models/bill/fields.yaml
+
+# Model Class name
+modelClass: Jc91715\Bill\Models\Bill
+
+# Default redirect location
+defaultRedirect: jc91715/bill/bills
+
+# Create page
+create:
+    title: Create Bill
+    redirect: jc91715/bill/bills/update/:id
+    redirectClose: jc91715/bill/bills
+
+# Update page
+update:
+    title: Edit Bill
+    redirect: jc91715/bill/bills
+    redirectClose: jc91715/bill/bills
+
+# Preview page
+preview:
+    title: Preview Bill

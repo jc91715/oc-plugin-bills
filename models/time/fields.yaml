@@ -1,0 +1,17 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    id:
+        label: ID
+        disabled: true
+    today_bill_date:
+        label: 日期
+        type: datepicker
+tabs:
+    fields:
+        bills:
+            label: 账单
+            type: partial
+            tab: 账单

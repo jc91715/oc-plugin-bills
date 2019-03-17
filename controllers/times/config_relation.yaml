@@ -1,0 +1,11 @@
+# ===================================
+#  Relation Behavior Config
+# ===================================
+
+bills:
+    label: 当天账单
+    list: ~/plugins/jc91715/bill/models/bill/columns.yaml
+    form: ~/plugins/jc91715/bill/models/bill/fields.yaml
+    readOnly: true
+    manage:
+        context: relation
